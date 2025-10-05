@@ -50,6 +50,7 @@ function App() {
               <img
                 src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                 alt="Profile"
+                loading="eager"
                 className="w-16 h-16 rounded-full object-cover border-2 border-blue-500"
               />
               <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 border-2 border-white rounded-full flex items-center justify-center">
@@ -94,10 +95,10 @@ function App() {
 
           <button
             onClick={() => setShowUnlockPopup(true)}
-            className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-pink-600 hover:from-pink-600 hover:via-red-600 hover:to-pink-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+            className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-pink-600 hover:from-pink-600 hover:via-red-600 hover:to-pink-700 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2 text-sm"
           >
-            <Lock className="w-5 h-5" />
-            <span>Desbloquear todos conteúdos - R$10</span>
+            <Lock className="w-4 h-4" />
+            <span>Desbloquear conteúdo (R$10)</span>
           </button>
         </div>
 
@@ -129,6 +130,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -146,6 +148,7 @@ function App() {
                   muted
                   loop
                   playsInline
+                  preload="none"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                   <Lock className="w-16 h-16 text-white drop-shadow-lg" />
@@ -179,6 +182,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -192,6 +196,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/imagem1.jpeg"
                   alt="Post"
+                  loading="lazy"
                   className="w-full aspect-square object-cover"
                   style={{ filter: 'blur(14px)', opacity: 0.6 }}
                 />
@@ -227,6 +232,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -244,6 +250,7 @@ function App() {
                   muted
                   loop
                   playsInline
+                  preload="none"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                   <Lock className="w-16 h-16 text-white drop-shadow-lg" />
@@ -277,6 +284,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -290,6 +298,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/imagem2.jpeg"
                   alt="Post"
+                  loading="lazy"
                   className="w-full aspect-square object-cover"
                   style={{ filter: 'blur(14px)', opacity: 0.6 }}
                 />
@@ -325,6 +334,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -375,6 +385,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
+                  loading="lazy"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -388,6 +399,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/imagem3.jpeg"
                   alt="Post"
+                  loading="lazy"
                   className="w-full aspect-square object-cover"
                   style={{ filter: 'blur(14px)', opacity: 0.6 }}
                 />
@@ -457,6 +469,7 @@ function App() {
                         style={{ filter: 'blur(14px)', opacity: 0.6 }}
                         muted
                         playsInline
+                        preload="none"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-lg">
                         <Lock className="w-10 h-10 text-white drop-shadow-lg" />
@@ -473,6 +486,7 @@ function App() {
                       <img
                         src={`https://s3.chefexpress.site/vortex/${img}`}
                         alt={`Foto ${idx + 1}`}
+                        loading="lazy"
                         className="w-full h-48 object-cover rounded-lg"
                         style={{ filter: 'blur(14px)', opacity: 0.6 }}
                       />

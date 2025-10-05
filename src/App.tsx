@@ -201,12 +201,12 @@ function App() {
             </div>
 
             {/* Unlock Button */}
-            <div className="p-4 bg-white">
+            <div className="p-4 bg-white border-b border-gray-200">
               <button
                 onClick={() => setShowUnlockPopup(true)}
-                className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-pink-600 hover:from-pink-600 hover:via-red-600 hover:to-pink-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                className="w-full bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
               >
-                <Lock className="w-5 h-5" />
+                <Lock className="w-4 h-4" />
                 <span>Desbloquear todos conteúdos - R$10</span>
               </button>
             </div>

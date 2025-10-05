@@ -17,7 +17,6 @@ function App() {
   const [showFullBio, setShowFullBio] = useState(false);
   const [showUnlockPopup, setShowUnlockPopup] = useState(false);
   const [copiedField, setCopiedField] = useState<string>('');
-  const [showBlockedAlert, setShowBlockedAlert] = useState(false);
 
   const handleCopy = (text: string, field: string) => {
     navigator.clipboard.writeText(text);
@@ -26,8 +25,7 @@ function App() {
   };
 
   const handleMediaClick = () => {
-    setShowBlockedAlert(true);
-    setTimeout(() => setShowBlockedAlert(false), 3000);
+    setShowUnlockPopup(true);
   };
 
   return (
@@ -121,13 +119,6 @@ function App() {
             ))}
           </div>
         </div>
-
-        {/* Blocked Content Alert */}
-        {showBlockedAlert && (
-          <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-3 rounded-full shadow-2xl animate-bounce">
-            <p className="font-bold text-sm">Conteúdo bloqueado! Libere tudo por apenas R$10</p>
-          </div>
-        )}
 
         {/* Content Area */}
         {activeTab === 'feed' ? (

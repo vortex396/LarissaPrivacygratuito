@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, MessageCircle, Share, Lock, Play, Camera, Crown, MoreHorizontal, DollarSign, Instagram, Twitter, Music, X, Copy, Check } from 'lucide-react';
-import { logPurchaseEvent, logInitiateCheckoutEvent } from './lib/supabase';
 
 function App() {
-  useEffect(() => {
-    window.logPurchaseToSupabase = logPurchaseEvent;
-    window.logInitiateCheckoutToSupabase = logInitiateCheckoutEvent;
-
-    if (typeof window.fireInitiateCheckoutEvent === 'function') {
-      window.fireInitiateCheckoutEvent('visitor');
-    }
-  }, []);
 
   const [activeTab, setActiveTab] = useState('feed');
   const [activeMediaTab, setActiveMediaTab] = useState('videos');

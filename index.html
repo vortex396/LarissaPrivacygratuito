@@ -28,33 +28,18 @@
       fbq('init', '804023795319915');
       fbq('init', '1153949476657735');
 
-      // Função global para disparar InitiateCheckout ao carregar página
-      window.fireInitiateCheckoutEvent = async function(email) {
-        // PRIMEIRO: Verifica no Supabase se já disparou QUALQUER evento
-        let shouldFire = true;
-        if (window.logInitiateCheckoutToSupabase) {
-          shouldFire = await window.logInitiateCheckoutToSupabase(email);
-        }
+      // Dispara PageView somente 1x por usuário
+      window.firePageViewEvent = async function() {
+        const hasViewed = localStorage.getItem('pageview_fired');
 
-        // SEGUNDO: Dispara InitiateCheckout no Meta APENAS se conseguiu salvar
-        if (shouldFire) {
-          fbq('track', 'InitiateCheckout');
+        if (!hasViewed) {
+          fbq('track', 'PageView');
+          localStorage.setItem('pageview_fired', 'true');
         }
       };
 
-      // Função global para disparar Purchase após login
-      window.firePurchaseEvent = async function(email) {
-        // PRIMEIRO: Verifica no Supabase se já disparou QUALQUER evento
-        let shouldFire = true;
-        if (window.logPurchaseToSupabase) {
-          shouldFire = await window.logPurchaseToSupabase(email);
-        }
-
-        // SEGUNDO: Dispara Purchase no Meta APENAS se conseguiu salvar
-        if (shouldFire) {
-          fbq('track', 'Purchase', {value: 10.00, currency: 'BRL'});
-        }
-      };
+      // Dispara ao carregar
+      window.firePageViewEvent();
     </script>
   </head>
   <body>

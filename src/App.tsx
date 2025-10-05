@@ -130,7 +130,7 @@ function App() {
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
-                  loading="lazy"
+                  loading="eager"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -148,7 +148,7 @@ function App() {
                   muted
                   loop
                   playsInline
-                  preload="none"
+                  preload="metadata"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/20">
                   <Lock className="w-16 h-16 text-white drop-shadow-lg" />

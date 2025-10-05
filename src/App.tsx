@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-24">
+    <div className="min-h-screen bg-gray-50 pb-20">
       {/* Header */}
       <div className="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-4">
@@ -171,6 +171,14 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">342 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 28 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
               </div>
             </div>
 
@@ -211,6 +219,14 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">189 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 15 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
               </div>
             </div>
 
@@ -253,6 +269,14 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">567 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 42 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
               </div>
             </div>
 
@@ -293,6 +317,14 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">234 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 18 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
               </div>
             </div>
 
@@ -335,6 +367,14 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">423 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 35 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
               </div>
             </div>
 
@@ -375,6 +415,14 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">298 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 22 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
               </div>
             </div>
           </div>
@@ -560,10 +608,6 @@ function App() {
         </div>
       </div>
 
-      {/* Fixed Footer */}
-      <div className="fixed bottom-16 left-0 right-0 bg-gradient-to-r from-pink-600 to-red-600 text-white py-2 px-4 text-center text-sm font-medium z-30">
-        Conteúdo gratuito com prévia bloqueada. Para ver tudo, desbloqueie seu acesso
-      </div>
     </div>
   );
 }

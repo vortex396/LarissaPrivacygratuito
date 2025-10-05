@@ -413,6 +413,208 @@ function App() {
                 </button>
               </div>
             </div>
+
+            {/* Video Post 7 */}
+            <div className="border-b border-gray-200 pb-4">
+              <div className="flex items-center p-4 pb-3">
+                <img
+                  src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
+                  alt="Profile"
+                  loading="lazy"
+                  className="w-8 h-8 rounded-full object-cover mr-3"
+                />
+                <div className="flex-1">
+                  <div className="font-semibold text-sm">larissasilva_</div>
+                  <div className="text-gray-500 text-xs">2 dias</div>
+                </div>
+                <MoreHorizontal className="w-5 h-5 text-gray-400" />
+              </div>
+
+              <div className="relative cursor-pointer" onClick={handleMediaClick}>
+                <video
+                  src="https://s3.chefexpress.site/vortex/arquivo2.mp4"
+                  className="w-full aspect-square object-cover"
+                  style={{ filter: 'blur(14px)', opacity: 0.6 }}
+                  muted
+                  loop
+                  playsInline
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <Lock className="w-16 h-16 text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-4">
+                    <Heart className="w-6 h-6 text-gray-700" />
+                    <MessageCircle className="w-6 h-6 text-gray-700" />
+                    <Share className="w-6 h-6 text-gray-700" />
+                  </div>
+                </div>
+                <div className="font-semibold text-sm mb-1">512 curtidas</div>
+                <div className="text-gray-500 text-sm mt-1">Ver todos os 48 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Image Post 8 */}
+            <div className="border-b border-gray-200 pb-4">
+              <div className="flex items-center p-4 pb-3">
+                <img
+                  src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
+                  alt="Profile"
+                  loading="lazy"
+                  className="w-8 h-8 rounded-full object-cover mr-3"
+                />
+                <div className="flex-1">
+                  <div className="font-semibold text-sm">larissasilva_</div>
+                  <div className="text-gray-500 text-xs">2 dias</div>
+                </div>
+                <MoreHorizontal className="w-5 h-5 text-gray-400" />
+              </div>
+
+              <div className="relative cursor-pointer" onClick={handleMediaClick}>
+                <img
+                  src="https://s3.chefexpress.site/vortex/imagem2.jpeg"
+                  alt="Post"
+                  loading="lazy"
+                  className="w-full aspect-square object-cover"
+                  style={{ filter: 'blur(14px)', opacity: 0.6 }}
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <Lock className="w-16 h-16 text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-4">
+                    <Heart className="w-6 h-6 text-gray-700" />
+                    <MessageCircle className="w-6 h-6 text-gray-700" />
+                    <Share className="w-6 h-6 text-gray-700" />
+                  </div>
+                </div>
+                <div className="font-semibold text-sm mb-1">376 curtidas</div>
+                <div className="text-gray-500 text-sm mt-1">Ver todos os 29 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Video Post 9 */}
+            <div className="border-b border-gray-200 pb-4">
+              <div className="flex items-center p-4 pb-3">
+                <img
+                  src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
+                  alt="Profile"
+                  loading="lazy"
+                  className="w-8 h-8 rounded-full object-cover mr-3"
+                />
+                <div className="flex-1">
+                  <div className="font-semibold text-sm">larissasilva_</div>
+                  <div className="text-gray-500 text-xs">3 dias</div>
+                </div>
+                <MoreHorizontal className="w-5 h-5 text-gray-400" />
+              </div>
+
+              <div className="relative cursor-pointer" onClick={handleMediaClick}>
+                <video
+                  src="https://s3.chefexpress.site/vortex/arquivo3.mp4"
+                  className="w-full aspect-square object-cover"
+                  style={{ filter: 'blur(14px)', opacity: 0.6 }}
+                  muted
+                  loop
+                  playsInline
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <Lock className="w-16 h-16 text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-4">
+                    <Heart className="w-6 h-6 text-gray-700" />
+                    <MessageCircle className="w-6 h-6 text-gray-700" />
+                    <Share className="w-6 h-6 text-gray-700" />
+                  </div>
+                </div>
+                <div className="font-semibold text-sm mb-1">445 curtidas</div>
+                <div className="text-gray-500 text-sm mt-1">Ver todos os 38 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Image Post 10 */}
+            <div className="border-b border-gray-200 pb-4">
+              <div className="flex items-center p-4 pb-3">
+                <img
+                  src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
+                  alt="Profile"
+                  loading="lazy"
+                  className="w-8 h-8 rounded-full object-cover mr-3"
+                />
+                <div className="flex-1">
+                  <div className="font-semibold text-sm">larissasilva_</div>
+                  <div className="text-gray-500 text-xs">3 dias</div>
+                </div>
+                <MoreHorizontal className="w-5 h-5 text-gray-400" />
+              </div>
+
+              <div className="relative cursor-pointer" onClick={handleMediaClick}>
+                <img
+                  src="https://s3.chefexpress.site/vortex/imagem3.jpeg"
+                  alt="Post"
+                  loading="lazy"
+                  className="w-full aspect-square object-cover"
+                  style={{ filter: 'blur(14px)', opacity: 0.6 }}
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <Lock className="w-16 h-16 text-white drop-shadow-lg" />
+                </div>
+              </div>
+
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center space-x-4">
+                    <Heart className="w-6 h-6 text-gray-700" />
+                    <MessageCircle className="w-6 h-6 text-gray-700" />
+                    <Share className="w-6 h-6 text-gray-700" />
+                  </div>
+                </div>
+                <div className="font-semibold text-sm mb-1">329 curtidas</div>
+                <div className="text-gray-500 text-sm mt-1">Ver todos os 25 comentários</div>
+
+                <button
+                  onClick={() => setShowUnlockPopup(true)}
+                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
+                >
+                  <Lock className="w-4 h-4" />
+                  <span>Desbloquear por R$10</span>
+                </button>
+              </div>
+            </div>
           </div>
         ) : activeTab === 'mídias' ? (
           <div className="bg-white">

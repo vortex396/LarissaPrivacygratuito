@@ -124,7 +124,7 @@ function App() {
         {/* Content Area */}
         {activeTab === 'feed' ? (
           <div className="bg-white relative">
-            {/* Video Post 1 */}
+            {/* Free Post 1 */}
             <div className="border-b border-gray-200 pb-4">
               <div className="flex items-center p-4 pb-3">
                 <img
@@ -140,19 +140,13 @@ function App() {
                 <MoreHorizontal className="w-5 h-5 text-gray-400" />
               </div>
 
-              <div className="relative cursor-pointer" onClick={handleMediaClick}>
-                <video
-                  src="https://s3.chefexpress.site/vortex/arquivo1.mp4"
+              <div>
+                <img
+                  src="https://s3.chefexpress.site/vortex/fotodoinsta.jpeg"
+                  alt="Post"
+                  loading="eager"
                   className="w-full aspect-square object-cover"
-                  style={{ filter: 'blur(14px)', opacity: 0.6 }}
-                  muted
-                  loop
-                  playsInline
-                  preload="metadata"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                  <Lock className="w-16 h-16 text-white drop-shadow-lg" />
-                </div>
               </div>
 
               <div className="p-4">
@@ -165,24 +159,16 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">342 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 28 comentários</div>
-
-                <button
-                  onClick={() => setShowUnlockPopup(true)}
-                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
-                >
-                  <Lock className="w-4 h-4" />
-                  <span>Desbloquear por R$10</span>
-                </button>
               </div>
             </div>
 
-            {/* Image Post 2 */}
+            {/* Free Post 2 */}
             <div className="border-b border-gray-200 pb-4">
               <div className="flex items-center p-4 pb-3">
                 <img
                   src="https://s3.chefexpress.site/vortex/fotodeperfil.jpg"
                   alt="Profile"
-                  loading="lazy"
+                  loading="eager"
                   className="w-8 h-8 rounded-full object-cover mr-3"
                 />
                 <div className="flex-1">
@@ -192,17 +178,13 @@ function App() {
                 <MoreHorizontal className="w-5 h-5 text-gray-400" />
               </div>
 
-              <div className="relative cursor-pointer" onClick={handleMediaClick}>
+              <div>
                 <img
-                  src="https://s3.chefexpress.site/vortex/imagem1.jpeg"
+                  src="https://s3.chefexpress.site/vortex/fotocorpo.jpeg"
                   alt="Post"
-                  loading="lazy"
+                  loading="eager"
                   className="w-full aspect-square object-cover"
-                  style={{ filter: 'blur(14px)', opacity: 0.6 }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                  <Lock className="w-16 h-16 text-white drop-shadow-lg" />
-                </div>
               </div>
 
               <div className="p-4">
@@ -215,15 +197,18 @@ function App() {
                 </div>
                 <div className="font-semibold text-sm mb-1">189 curtidas</div>
                 <div className="text-gray-500 text-sm mt-1">Ver todos os 15 comentários</div>
-
-                <button
-                  onClick={() => setShowUnlockPopup(true)}
-                  className="w-full mt-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold py-2.5 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 text-sm shadow-md"
-                >
-                  <Lock className="w-4 h-4" />
-                  <span>Desbloquear por R$10</span>
-                </button>
               </div>
+            </div>
+
+            {/* Unlock Button */}
+            <div className="p-4 bg-white">
+              <button
+                onClick={() => setShowUnlockPopup(true)}
+                className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-pink-600 hover:from-pink-600 hover:via-red-600 hover:to-pink-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+              >
+                <Lock className="w-5 h-5" />
+                <span>Desbloquear todos conteúdos - R$10</span>
+              </button>
             </div>
 
             {/* Video Post 3 */}
